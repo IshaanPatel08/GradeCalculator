@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5A3D77;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #5A3D77;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #7a557b;
+        }
+
+        .category-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .assignment-section {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e2e2e2;
+            border-radius: 6px;
+        }
+
+        #final-grade {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: #5A3D77;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Grade Calculator</h1>
+        
+        <!-- Class Name Input -->
+        <div class="form-group">
+            <label for="class-name">Class Name:</label>
+            <input type="text" id="class-name" placeholder="Enter Class Name">
+        </div>
+
+        <!-- Number of Categories Input -->
+        <div class="form-group">
+            <label for="num-categories">Number of Categories:</label>
+            <input type="number" id="num-categories" placeholder="Enter number of categories" min="1">
+        </div>
+
+        <!-- Button to generate categories -->
+        <div class="button-container">
+            <button id="generate-categories-button">Generate Categories</button>
+        </div>
+
+        <!-- Categories Container (Dynamic) -->
+        <div id="categories-container"></div>
+
+        <!-- Calculate Button -->
+        <div class="button-container">
+            <button id="calculate-button">Calculate Grade</button>
+        </div>
+        
+        <div id="final-grade">Final Grade: </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
